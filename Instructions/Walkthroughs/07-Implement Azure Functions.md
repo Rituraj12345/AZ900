@@ -20,7 +20,7 @@ In this task, we will create a Function app.
     | Settings | Value |
     | -- | --|
     | Subscription | the name of your Azure subscription |
-    | Resource group | the name of a new resource group **myRGFunction** |
+    | Resource group | the name of a new resource group **myRGFunction[yourname]** |
     | Function App name | **function-xxxx** |
     | Publish | **Code** |
     | Runtime stack | **.NET Core** |
