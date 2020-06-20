@@ -21,8 +21,8 @@ In this task, we will create a new container instance for the web application.
 	| Setting| Value|
 	|----|----|
 	| Subscription | **Choose your subscription** |
-	| Resource group | **myRGContainer** (create new) |
-	| Container name| **mycontainer**|
+	| Resource group | **myRGContainer[yourname]** (create new) |
+	| Container name| **mycontainer[yourname]**|
 	| Region | **(US) East US** |
 	| Image source| **Docker Hub or other registry**|
 	| Image type| **Public**|
@@ -36,7 +36,7 @@ In this task, we will create a new container instance for the web application.
 
 	| Setting| Value|
 	|--|--|
-	| DNS name label| **mycontainerdnsxxxx** |
+	| DNS name label| **mycontainer[yourname]dnsxxxx** |
 	|||
 	
 	**Note**: Your container will be publicly reachable at dns-name-label.region.azurecontainer.io. If you receive a **DNS name label not available** error message following the deployment, specify a different DNS name label and re-deploy.
@@ -57,7 +57,7 @@ In this task, we verify that the container instance is running by ensuring that 
 
 1. After the deployment is complete, click the **Go to resource** link the deployment blade or the link to the resource in the Notification area.
 
-2. On the **Overview** blade of **mycontainer**, ensure your container **Status** is **Running**. 
+2. On the **Overview** blade of **mycontainer[yourname]**, ensure your container **Status** is **Running**. 
 
 3. Locate the Fully Qualified Domain Name (FQDN).
 
