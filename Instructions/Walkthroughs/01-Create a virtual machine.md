@@ -26,7 +26,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Virtual machine name | **myVM[yourname]** |
     | Location | **(US) East US**|
     | Image | **Windows Server 2019 Datacenter**|
-    | Size | Standard D2s v3|
+    | Size | Standard DS1_v2|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|
     | Inbound port rules - Allow select ports | **RDP (3389)** and **HTTP (80)**|
