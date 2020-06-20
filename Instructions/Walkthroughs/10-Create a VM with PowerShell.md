@@ -32,7 +32,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 2. In the PowerShell session, within the Cloud Shell pane, create a new resource group. 
 
     ```PowerShell
-    New-AzResourceGroup -Name myRGPS -Location EastUS
+    New-AzResourceGroup -Name myRGPS[yourname] -Location EastUS
     ```
 
 3. Verify your new resource group. 
@@ -45,7 +45,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
     ```PowerShell
     New-AzVm `
-    -ResourceGroupName "myRGPS" `
+    -ResourceGroupName "myRGPS[yourname]" `
     -Name "myVMPS" `
     -Location "East US" `
     -VirtualNetworkName "myVnetPS" `
@@ -79,7 +79,7 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 4. Stop the virtual machine. When prompted confirm (Yes) to the action. 
 
     ```PowerShell
-    Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
+    Stop-AzVM -ResourceGroupName myRGPS[yourname] -Name myVMPS
     ```
 
 5. Verify your virtual machine state. The PowerState should now be **deallocated**. You can also verify the virtual machine status in the portal. 
