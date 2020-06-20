@@ -19,10 +19,10 @@ In this task, we will create a virtual network.
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **vnet1** |
+    | Name | **vnet1[yourinitials]** |
     | Address space |**10.1.0.0/16** |
     | Subscription | **Select your subscription** |
-    | Resource group | **myRGVNet** (create new) |
+    | Resource group | **myRGVNet[yourinitials]** (create new) |
     | Location | **(US) East US** |
     | Subnet - Name | **default** |
     | Subnet Address range | **10.1.0.0/24** |
@@ -46,7 +46,7 @@ In this task, we will create two virtual machines in the virtual network.
    | Setting | Value | 
    | --- | --- |
    | Subscription | **Choose your subscription**  |
-   | Resource group |  **myRGVNet** |
+   | Resource group |  **myRGVNet[yourinitials]** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
    | Image | **Windows Server 2019 Datacenter** |
@@ -56,11 +56,11 @@ In this task, we will create two virtual machines in the virtual network.
    | Selected inbound ports| **RDP (3389)** |
    |||
 
-3. Select the **Networking** tab. Make sure the virtual machine is placed in the vnet1 virtual network. Review the default settings, but do not make any other changes. 
+3. Select the **Networking** tab. Make sure the virtual machine is placed in the vnet1[yourinitials] virtual network. Review the default settings, but do not make any other changes. 
 
    | Setting | Value | 
    | --- | --- |
-   | Virtual network | **vnet1** |
+   | Virtual network | **vnet1[yourinitials]** |
    |||
 
 4. Click **Review + create**. After the Validation passes, click **Create**. Deployment times can vary but it can generally take between three to six minutes to deploy.
@@ -71,9 +71,9 @@ In this task, we will create two virtual machines in the virtual network.
 
     | Setting | Value |
     | --- | --- |
-    | Resource group | **myRGVNet** |
+    | Resource group | **myRGVNet[yourinitials]** |
     | Virtual machine name |  **vm2** |
-    | Virtual network | **vnet1** |
+    | Virtual network | **vnet1[yourinitials]** |
     | Public IP | (new) **vm2-ip** |
     |||
 
