@@ -34,7 +34,7 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
 2. In the Bash session, within the Cloud Shell pane, create a new resource group. 
 
     ```cli
-    az group create --name myRGCLI --location EastUS
+    az group create --name myRGCLI[yourname] --location EastUS
     ```
 
 3. Verify the resource group was created.
@@ -47,8 +47,8 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
 
     ```cli
     az vm create \
-    --name myVMCLI \
-    --resource-group myRGCLI \
+    --name myVMCLI[yourname] \
+    --resource-group myRGCLI[yourname] \
     --image UbuntuLTS \
     --location EastUS \
     --admin-username azureuser \
@@ -61,7 +61,7 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
 
 5. When the command finishes running, in the browser window, close the Cloud Shell pane.
 
-6. In the Azure portal, search for **Virtual machines** and verify that **myVMCLI** is running.
+6. In the Azure portal, search for **Virtual machines** and verify that **myVMCLI[yourname]** is running.
 
     ![Screenshot of the virtual machines page with myVMPS in a running state.](../images/1101.png)
 
@@ -77,19 +77,19 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
 3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is **running**.
 
     ```cli
-    az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
+    az vm show --resource-group myRGCLI[yourname] --name myVMCLI[yourname] --show-details --output table 
     ```
 
 4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
 
     ```cli
-    az vm stop --resource-group myRGCLI --name myVMCLI
+    az vm stop --resource-group myRGCLI[yourname] --name myVMCLI[yourname]
     ```
 
 5. Verify your virtual machine status. The PowerState should now be **stopped**.
 
     ```cli
-    az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
+    az vm show --resource-group myRGCLI[yourname] --name myVMCLI[yourname] --show-details --output table 
     ```
 
 # Task 4: Review Azure Advisor Recommendations
