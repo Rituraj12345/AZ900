@@ -22,8 +22,8 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Settings | Values |
     |  -- | -- |
     | Subscription | **Choose your subscription**|
-    | Resource group | **myRGVM** (create new) |
-    | Virtual machine name | **myVm** |
+    | Resource group | **myRGVM[yourname]** (create new) |
+    | Virtual machine name | **myVM[yourname]** |
     | Location | **(US) East US**|
     | Image | **Windows Server 2019 Datacenter**|
     | Size | Standard D2s v3|
@@ -49,7 +49,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
 
 In this task, we will connect to our new virtual machine using RDP. 
 
-1. Search for **myVM** and select your new virtual machine.
+1. Search for **myVM[yourname]** and select your new virtual machine.
 
     **Note**: You could also use the **Go to resource** link on the deployment page or the link to the resource in the **Notification** area.
 
@@ -93,7 +93,7 @@ In this task, install the Web Server role on the server and ensure the default I
 
     ![Screenshot of the windows PowerShell command prompt with the command Install-WindowsFeature -name Web-Server -IncludeManagementTools successfully completed and output stating it was successful.](../images/0106.png)
 
-4. Back in the portal, navigate back to the **Overview** blade of myVM and, use the **Click to clipboard** button to copy the public IP address of myVM, open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
+4. Back in the portal, navigate back to the **Overview** blade of myVM[yourname] and, use the **Click to clipboard** button to copy the public IP address of myVM[yourname], open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
     ![Screenshot of the Azure portal virtual machine property pane with the IP address copied.](../images/0107.png)
 
