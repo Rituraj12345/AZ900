@@ -20,7 +20,7 @@ In this task, we will create an IoT hub.
     | Settings | Value |
     |--|--|
     | Subscription | **Choose your subscription** |
-    | Resource Group |  **myRGIoT** (create new)|
+    | Resource Group |  **myRGIoT[yourname]** (create new)|
     | Region | **East US** |
     | IoT Hub Name | **my-hub-groupxxxx** |
     | | |	
