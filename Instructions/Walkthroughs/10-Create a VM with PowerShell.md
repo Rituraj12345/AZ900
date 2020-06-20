@@ -46,7 +46,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
     ```PowerShell
     New-AzVm `
     -ResourceGroupName "myRGPS[yourname]" `
-    -Name "myVMPS" `
+    -Name "myVMPS[yourname]" `
     -Location "East US" `
     -VirtualNetworkName "myVnetPS" `
     -SubnetName "mySubnetPS" `
@@ -56,9 +56,9 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
 5. Close the PowerShell session Cloud Shell pane.
 
-6. In the Azure portal, search for **Virtual machines** and verify the **myVMPS** is running. This may take a few minutes.
+6. In the Azure portal, search for **Virtual machines** and verify the **myVMPS[yourname]** is running. This may take a few minutes.
 
-    ![Screenshot of the virtual machines page with myVMPS in a running state.](../images/1001.png)
+    ![Screenshot of the virtual machines page with myVMPS[yourname] in a running state.](../images/1001.png)
 
 7. Access the new virtual machine and review the Overview and Networking settings to verify your information was correctly deployed. 
 
@@ -73,19 +73,19 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 3. Retrieve information about your virtual machine including name, resource group, location, and status. Notice the PowerState is **running**.
 
     ```PowerShell
-    Get-AzVM -name myVMPS -status | Format-Table -autosize
+    Get-AzVM -name myVMPS[yourname] -status | Format-Table -autosize
     ```
 
 4. Stop the virtual machine. When prompted confirm (Yes) to the action. 
 
     ```PowerShell
-    Stop-AzVM -ResourceGroupName myRGPS[yourname] -Name myVMPS
+    Stop-AzVM -ResourceGroupName myRGPS[yourname] -Name myVMPS[yourname]
     ```
 
 5. Verify your virtual machine state. The PowerState should now be **deallocated**. You can also verify the virtual machine status in the portal. 
 
     ```PowerShell
-    Get-AzVM -name myVMPS -status | Format-Table -autosize
+    Get-AzVM -name myVMPS[yourname] -status | Format-Table -autosize
     ```
 
 # Task 4: Review Azure Advisor Recommendations
